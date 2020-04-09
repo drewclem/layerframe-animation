@@ -25,7 +25,7 @@ const Scene1 = () => (
             }}
             transition={{
               delay: 0.2,
-              duration: 0.35,
+              duration: 0.2,
             }}
           />
 

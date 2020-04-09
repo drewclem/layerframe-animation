@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 
 import Scene1 from "../components/Scene1";
 import Layout from "../components/Layout";
-import Link from 'next/link'
 
 const Home = () => (
   <div className="font-display">
@@ -19,7 +18,7 @@ const Home = () => (
           y: [0, 0, 1700],
         }}
         transition={{
-          duration: 0.4,
+          duration: 0.6,
           delay: .8,
           type: "spring",
           ease: "easeInOut",
@@ -37,14 +36,14 @@ const Home = () => (
         }}
         transition={{
           delay: 1.1,
-          duration: 0.05,
+          duration: 0.25,
           ease: 'easeIn'
         }}
       >
         <div className="md:flex p-4 lg:px-56 items-center md:mb-40 pb-20">
           <img src="/heroImage.jpg" alt="Busy sidewalk" className='md:w-1/2 mb-2 md:mb-0 mr-6 shadow-md' />
 
-          <div className='md:w-1/2 md:-ml-20 md:mt-32'>
+          <div className='md:w-1/2'>
             <h1 className='text-white text-5xl font-heading font-bold mb-4'>Layerframe</h1>
 
             <p className='text-white mb-6 text-xs md:text-lg'>Lorem ipsum dolor sit amet, consectetur Hire Me, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
