@@ -1,4 +1,3 @@
-import React from 'react'
 import { motion } from "framer-motion";
 
 import Logo from "../components/SvgLogo";
@@ -35,7 +34,7 @@ const Scene1 = () => (
             animate={{
               opacity: [0, 1],
               y: [0, -60, 0],
-              scale: [1, 4, 3],
+              scale: [1, 6, 5],
             }}
             transition={{
               delay: 0.15,
