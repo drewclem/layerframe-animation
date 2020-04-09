@@ -28,9 +28,9 @@ const Layout = ({children}) => (
           </li>
 
           <li className="text-sm md:text-base opacity-50 p-2 hover:opacity-100 mr-10 border-b-2 border-white hover:border-blue transition duration-100 ease-in-out">
-            <Link href="/"><a>Nav Item</a></Link>
+            <Link href="/"><a>Why Hire Me</a></Link>
           </li>
-          
+
           <li className="text-sm md:text-base opacity-50 p-2 hover:opacity-100 border-b-2 border-white hover:border-blue transition duration-100 ease-in-out">
             <Link href="/"><a>Nav Item</a></Link>
           </li>
