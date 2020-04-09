@@ -41,7 +41,7 @@ const Scene1 = () => (
               ease: "easeInOut",
             }}
           >
-            <Logo className="w-full fill-current" />
+            <Logo className="w-full" />
           </motion.div>
         </motion.div>
       </div>

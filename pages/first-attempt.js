@@ -1,12 +1,9 @@
-import Head from "next/head";
 import { motion } from "framer-motion";
 import Logo from "../components/SvgLogo";
-import Link from 'next/link'
+import Layout from '../components/Layout'
 
 const FirstAttempt = () => (
-  <div>
-    <a href="/" className='text-gray-600 font-semibold pl-24'>Back</a>
-
+  <Layout>
     <motion.div
       className="flex w-5/6 my-auto h-screen items-center justify-center mx-auto"
       animate={{
@@ -57,7 +54,7 @@ const FirstAttempt = () => (
         Layerframe
       </motion.span>
     </motion.div>
-  </div>
+  </Layout>
 );
 
 export default FirstAttempt;
