@@ -41,7 +41,7 @@ const Home = () => (
           ease: 'easeIn'
         }}
       >
-        <div className="md:flex p-4 md:px-56 items-center md:mb-40 pb-20">
+        <div className="md:flex p-4 lg:px-56 items-center md:mb-40 pb-20">
           <img src="/heroImage.jpg" alt="Busy sidewalk" className='md:w-1/2 mb-2 md:mb-0 mr-6 shadow-md' />
 
           <div className='md:w-1/2 md:-ml-20 md:mt-32'>
