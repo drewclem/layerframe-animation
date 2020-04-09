@@ -38,7 +38,7 @@ const Home = () => (
         ease: 'easeIn'
       }}
     >
-      <div class="flex items-center">
+      <div className="flex items-center">
         <div className='w-6 mr-3'>
           <Logo className="w-full" />
         </div>
@@ -48,7 +48,7 @@ const Home = () => (
       <nav>
         <ul className="flex justify-between">
           <li className="opacity-50 p-2 hover:opacity-100 mr-10 border-b-2 border-white hover:border-blue transition duration-75 ease-in-out">
-            <Link href="/"><a>Nav Item</a></Link>
+            <Link href="/first-attempt"><a>First Attempt</a></Link>
           </li>
           <li className="opacity-50 p-2 hover:opacity-100 mr-10 border-b-2 border-white hover:border-blue transition duration-75 ease-in-out">
             <Link href="/"><a>Nav Item</a></Link>
@@ -79,8 +79,17 @@ const Home = () => (
           right: 50,
           bottom: 50,
         }}
+        animate={{
+          y: [0, -15]
+        }}
+        transition={{
+          yoyo: Infinity,
+          type: 'spring',
+          ease: 'easeInOut'
+        }}
       >
         <LogoWhite className='w-full'/>
+        <p className="text-white text-center mt-4 opacity-75">Drag me!</p>
       </motion.div>  
     </motion.div>
   </div>
