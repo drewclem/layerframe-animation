@@ -5,3 +5,19 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700;900&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+
+/*-------Nav Item Styles----------*/
+
+.nav-item {
+  @apply text-sm opacity-50 border-b-2 border-white transition duration-100 ease-in-out
+}
+
+.nav-item:hover {
+  @apply opacity-100 border-blue
+}
+
+@media(min-width: 768px) {
+  .nav-item {
+    @apply text-base p-2
+  }
+}

@@ -1,4 +1,3 @@
-import Head from "next/head";
 import { motion } from "framer-motion";
 
 import Scene1 from "../components/Scene1";
@@ -6,11 +5,6 @@ import Layout from "../components/Layout";
 
 const Home = () => (
   <div className="font-display">
-    <Head>
-      <title>Layerframe animation</title>
-      <link rel="icon" href="/favicon.ico" />
-    </Head>
-
     <div className='overflow-x-hidden hidden md:block'>
       <motion.div
         animate={{
@@ -35,28 +29,49 @@ const Home = () => (
           opacity: [0, 1],
         }}
         transition={{
-          delay: 1.1,
+          delay: 1.3,
           duration: 0.25,
-          ease: 'easeIn'
+          ease: 'easeIn',
         }}
       >
-        <div className="md:flex p-4 lg:px-56 items-center md:mb-40 pb-20">
-          <img src="/heroImage.jpg" alt="Busy sidewalk" className='md:w-1/2 mb-2 md:mb-0 mr-6 shadow-md' />
+        <motion.div
+          className="p-4 lg:px-56 md:mb-40 pb-20"
+        >
+          <motion.div
+            className='md:flex items-center'
+          >
+            <img src="/heroImage.jpg" alt="Busy sidewalk" className='md:w-1/2 mb-2 md:mb-0 mr-6 shadow-md' />
 
-          <div className='md:w-1/2'>
-            <h1 className='text-white text-5xl font-heading font-bold mb-4'>Layerframe</h1>
+            <div className='md:w-1/2'>
+              <h1 className='text-white text-5xl font-heading font-bold mb-4'>Layerframe</h1>
 
-            <p className='text-white mb-6 text-xs md:text-lg'>Lorem ipsum dolor sit amet, consectetur Hire Me, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p className='text-white mb-6 text-xs md:text-lg'>Lorem ipsum dolor sit amet, consectetur Hire Me, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
-            <button className='bg-gray-300 font-bold uppercase rounded px-6 py-3 shadow transform transition hover:shadow-md hover:scale-110 ease-in-out duration-100 w-full md:w-auto'>
-              <a href="https://drewclem.com">Let's Chat</a>
-            </button>
-          </div>
-        </div>
+              <motion.button
+                className='bg-gray-300 font-bold uppercase rounded px-6 py-3 shadow transform transition hover:shadow-md w-full md:w-auto'
+                whileHover={{
+                  y:[0, -5]
+                }}
+                transition={{
+                  yoyo: Infinity,
+                  type:'spring',
+                  stiffness: 100,
+                  ease: 'easeInOut'
+                }}
+              >
+                <a href="https://drewclem.com">Let's Chat</a>
+              </motion.button>
+            </div>
+          </motion.div>
+        </motion.div>
 
-        <div className='p-4 pt-12 md:p-4 bg-white text-blue'>
+        <div
+          className='p-4 pt-12 md:p-4 bg-white text-blue'
+        >
           <div className='container mx-auto md:flex justify-between'>
-            <div className='md:pr-4 md:-mt-20 mb-10 md:mb-0'>
+            <div
+              className='md:pr-4 md:-mt-20 mb-10 md:mb-0'
+            >
               <img src="https://cdn.pixabay.com/photo/2016/03/09/09/22/workplace-1245776_960_720.jpg" alt="Business meeting" className='w-full shadow-md mb-3'/>
               <h2 className='font-heading text-2xl font-semibold mb-3'>Lorem Ipsum</h2>
               <p className='opacity-75 text-black mb-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed Hire Me tempor incididunt ut labore et dolore magna aliqua.</p>
