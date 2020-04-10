@@ -5,7 +5,7 @@ import Layout from "../components/Layout";
 
 const Home = () => (
   <div className="font-display">
-    <div className='overflow-x-hidden hidden md:block'>
+    <div className='overflow-hidden hidden md:block'>
       <motion.div
         animate={{
           scale: [1, 0, 30],
