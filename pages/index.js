@@ -43,7 +43,7 @@ const Home = () => (
             <img src="/heroImage.jpg" alt="Busy sidewalk" className='md:w-1/2 mb-2 md:mb-0 mr-6 shadow-md' />
 
             <div className='md:w-1/2'>
-              <h1 className='text-white text-5xl font-heading font-bold mb-4'>Layerframe</h1>
+              <h1 className='text-white text-5xl font-heading font-semibold mb-4'>Layerframe</h1>
 
               <p className='text-white mb-6 text-xs md:text-lg'>Lorem ipsum dolor sit amet, consectetur Hire Me, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
